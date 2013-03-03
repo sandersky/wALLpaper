@@ -17,5 +17,6 @@
 - (void)mainViewDidLoad;
 
 - (IBAction)pickImageButtonPressed:(id)sender;
+- (IBAction)logoPressed:(id)sender;
 
 @end

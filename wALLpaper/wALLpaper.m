@@ -52,6 +52,12 @@
     }
 }
 
+- (IBAction)logoPressed:(id)sender
+{
+    NSURL *url = [NSURL URLWithString:@"http://mintrus.com/"];
+    [[NSWorkspace sharedWorkspace] openURL:url];
+}
+
 - (NSString *)runCommand:(NSString *)commandToRun
 {
     NSTask *task;
