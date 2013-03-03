@@ -9,7 +9,13 @@
 #import <PreferencePanes/PreferencePanes.h>
 
 @interface wALLpaper : NSPreferencePane
+{
+    IBOutlet NSImageView *_imageView;
+    IBOutlet NSButton *_pickImageButton;
+}
 
 - (void)mainViewDidLoad;
+
+- (IBAction)pickImageButtonPressed:(id)sender;
 
 @end

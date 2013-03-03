@@ -27,7 +27,7 @@
 	<key>NSMainNibFile</key>
 	<string>wALLpaper</string>
 	<key>NSPrefPaneIconFile</key>
-	<string>wALLpaper.tiff</string>
+	<string>icon.png</string>
 	<key>NSPrefPaneIconLabel</key>
 	<string>wALLpaper</string>
 	<key>NSPrincipalClass</key>
