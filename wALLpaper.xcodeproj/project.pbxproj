@@ -13,7 +13,6 @@
 		E0D8D25116E39ECC000A22AB /* wALLpaper.m in Sources */ = {isa = PBXBuildFile; fileRef = E0D8D25016E39ECC000A22AB /* wALLpaper.m */; };
 		E0D8D25616E39ECC000A22AB /* wALLpaper.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0D8D25416E39ECC000A22AB /* wALLpaper.xib */; };
 		E0DFBAAB16E3BC2600BD0C54 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFBAAA16E3BC2600BD0C54 /* icon.png */; };
-		E0DFBAAD16E3C91400BD0C54 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E0DFBAAC16E3C91400BD0C54 /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		E0D8D25016E39ECC000A22AB /* wALLpaper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wALLpaper.m; sourceTree = "<group>"; };
 		E0D8D25516E39ECC000A22AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/wALLpaper.xib; sourceTree = "<group>"; };
 		E0DFBAAA16E3BC2600BD0C54 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		E0DFBAAC16E3C91400BD0C54 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +84,6 @@
 		E0D8D24816E39ECC000A22AB /* wALLpaper */ = {
 			isa = PBXGroup;
 			children = (
-				E0DFBAAC16E3C91400BD0C54 /* logo.png */,
 				E0DFBAAA16E3BC2600BD0C54 /* icon.png */,
 				E0D8D24F16E39ECC000A22AB /* wALLpaper.h */,
 				E0D8D25016E39ECC000A22AB /* wALLpaper.m */,
@@ -144,7 +141,7 @@
 		E0D8D23316E39ECC000A22AB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Mintrus, LLC";
 			};
 			buildConfigurationList = E0D8D23616E39ECC000A22AB /* Build configuration list for PBXProject "wALLpaper" */;
@@ -172,7 +169,6 @@
 				E0D8D24D16E39ECC000A22AB /* InfoPlist.strings in Resources */,
 				E0D8D25616E39ECC000A22AB /* wALLpaper.xib in Resources */,
 				E0DFBAAB16E3BC2600BD0C54 /* icon.png in Resources */,
-				E0DFBAAD16E3C91400BD0C54 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +219,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -256,7 +251,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -282,7 +276,9 @@
 		E0D8D25A16E39ECC000A22AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wALLpaper/wALLpaper-Prefix.pch";
 				INFOPLIST_FILE = "wALLpaper/wALLpaper-Info.plist";
@@ -295,7 +291,9 @@
 		E0D8D25B16E39ECC000A22AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_GC = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "wALLpaper/wALLpaper-Prefix.pch";
 				INFOPLIST_FILE = "wALLpaper/wALLpaper-Info.plist";
